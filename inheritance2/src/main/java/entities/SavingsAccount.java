@@ -8,4 +8,8 @@ public class SavingsAccount extends Account {
         super();
     }
 
+    public SavingsAccount(Integer number, String holder, Double balance, Double interestRate) {
+        super(number, holder, balance);
+        this.interestRate = interestRate;
+    }
 }
