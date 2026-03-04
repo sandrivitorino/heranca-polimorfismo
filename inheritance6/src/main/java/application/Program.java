@@ -52,7 +52,7 @@ public class Program {
         System.out.println();
         System.out.println("TAXES PAID: ");
         for(TaxPayers tax : list){
-            double tx = tax.Tax();
+            double tx = tax.tax();
             System.out.println(tax.tag());
             sum += tx;
         }

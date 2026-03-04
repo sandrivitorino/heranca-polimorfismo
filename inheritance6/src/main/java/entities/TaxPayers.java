@@ -30,12 +30,12 @@ public abstract class TaxPayers {
         this.anualIncome = anualIncome;
     }
 
-    public abstract double Tax();
+    public abstract double tax();
 
     public String tag(){
         return name
                 + ": $ "
-                + String.format("%.2f", Tax());
+                + String.format("%.2f", tax());
     }
 
 }

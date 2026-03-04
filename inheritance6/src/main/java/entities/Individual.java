@@ -22,16 +22,13 @@ public class Individual extends TaxPayers{
     }
 
     @Override
-    public double Tax() {
-        double total = 0;
-
+    public double tax() {
         if (getAnualIncome() < 2000.00){
-            total = (getAnualIncome() * 0.15 ) - (helthExpenditures * 0.50);
+            return getAnualIncome() * 0.15  - helthExpenditures * 0.50;
         }
         else{
-            total = (getAnualIncome() * 0.25 ) - (helthExpenditures * 0.50);
+            return getAnualIncome() * 0.25  - helthExpenditures * 0.50;
         }
 
-        return total;
     }
 }
